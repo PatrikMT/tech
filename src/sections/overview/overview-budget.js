@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
-import ArrowDownIcon from '@heroicons/react/24/solid/ArrowDownIcon';
-import ArrowUpIcon from '@heroicons/react/24/solid/ArrowUpIcon';
+
 import CurrencyDollarIcon from '@heroicons/react/24/solid/CurrencyDollarIcon';
 import { Avatar, Card, CardContent, Stack, SvgIcon, Typography } from '@mui/material';
 
@@ -13,68 +12,27 @@ export const OverviewBudget = (props) => {
         <Stack
           alignItems="flex-start"
           direction="row"
-          justifyContent="space-between"
+          justifyContent="center"
           spacing={3}
-        >
+          >
           <Stack spacing={1}>
             <Typography
               color="text.secondary"
-              variant="overline"
+              variant="h4"
             >
-              Budget
+              Chamados
             </Typography>
-            <Typography variant="h4">
+            <Typography variant="h3">
               {value}
             </Typography>
-          </Stack>
-          <Avatar
-            sx={{
-              backgroundColor: 'error.main',
-              height: 56,
-              width: 56
-            }}
-          >
-            <SvgIcon>
-              <CurrencyDollarIcon />
-            </SvgIcon>
-          </Avatar>
-        </Stack>
-        {difference && (
-          <Stack
-            alignItems="center"
-            direction="row"
-            spacing={2}
-            sx={{ mt: 2 }}
-          >
-            <Stack
-              alignItems="center"
-              direction="row"
-              spacing={0.5}
-            >
-              <SvgIcon
-                color={positive ? 'success' : 'error'}
-                fontSize="small"
-              >
-                {positive ? <ArrowUpIcon /> : <ArrowDownIcon />}
-              </SvgIcon>
-              <Typography
-                color={positive ? 'success.main' : 'error.main'}
-                variant="body2"
-              >
-                {difference}%
-              </Typography>
             </Stack>
-            <Typography
-              color="text.secondary"
-              variant="caption"
-            >
-              Since last month
-            </Typography>
-          </Stack>
-        )}
-      </CardContent>
-    </Card>
-  );
+            
+            
+           </Stack>
+           
+          </CardContent>
+          </Card>
+           );
 };
 
 OverviewBudget.prototypes = {

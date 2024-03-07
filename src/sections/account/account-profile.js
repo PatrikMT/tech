@@ -10,12 +10,12 @@ import {
 } from '@mui/material';
 
 const user = {
-  avatar: '/assets/avatars/avatar-anika-visser.png',
-  city: 'Los Angeles',
-  country: 'USA',
-  jobTitle: 'Senior Developer',
-  name: 'Anika Visser',
-  timezone: 'GTM-7'
+  avatar: '',
+  city: '',
+  country: '',
+  jobTitle: '',
+  name: '',
+  timezone: ''
 };
 
 export const AccountProfile = () => (
@@ -62,7 +62,7 @@ export const AccountProfile = () => (
         fullWidth
         variant="text"
       >
-        Upload picture
+        Carregar foto
       </Button>
     </CardActions>
   </Card>

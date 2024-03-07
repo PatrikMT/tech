@@ -56,19 +56,19 @@ export const CustomersTable = (props) => {
                   />
                 </TableCell>
                 <TableCell>
-                  Name
+                  Nome do produto
                 </TableCell>
                 <TableCell>
-                  Email
+                  Quantidade
                 </TableCell>
                 <TableCell>
-                  Location
+                  
                 </TableCell>
                 <TableCell>
-                  Phone
+                  
                 </TableCell>
                 <TableCell>
-                  Signed Up
+                  Data de alteração
                 </TableCell>
               </TableRow>
             </TableHead>
@@ -101,22 +101,22 @@ export const CustomersTable = (props) => {
                         direction="row"
                         spacing={2}
                       >
-                        <Avatar src={customer.avatar}>
+                        
                           {getInitials(customer.name)}
-                        </Avatar>
+                       
                         <Typography variant="subtitle2">
                           {customer.name}
                         </Typography>
                       </Stack>
                     </TableCell>
                     <TableCell>
-                      {customer.email}
+                      {customer.number}
                     </TableCell>
                     <TableCell>
-                      {customer.address.city}, {customer.address.state}, {customer.address.country}
+                      
                     </TableCell>
                     <TableCell>
-                      {customer.phone}
+                      
                     </TableCell>
                     <TableCell>
                       {createdAt}

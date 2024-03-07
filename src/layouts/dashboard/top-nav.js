@@ -65,7 +65,7 @@ export const TopNav = (props) => {
                 </SvgIcon>
               </IconButton>
             )}
-            <Tooltip title="Search">
+            <Tooltip title="Buscar">
               <IconButton>
                 <SvgIcon fontSize="small">
                   <MagnifyingGlassIcon />
@@ -78,14 +78,14 @@ export const TopNav = (props) => {
             direction="row"
             spacing={2}
           >
-            <Tooltip title="Contacts">
+            <Tooltip title="Mensagens">
               <IconButton>
                 <SvgIcon fontSize="small">
                   <UsersIcon />
                 </SvgIcon>
               </IconButton>
             </Tooltip>
-            <Tooltip title="Notifications">
+            <Tooltip title="Notificações">
               <IconButton>
                 <Badge
                   badgeContent={4}
@@ -106,7 +106,7 @@ export const TopNav = (props) => {
                 height: 40,
                 width: 40
               }}
-              src="/assets/avatars/avatar-anika-visser.png"
+              src=""
             />
           </Stack>
         </Stack>

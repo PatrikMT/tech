@@ -20,17 +20,17 @@ const Page = () => {
     validationSchema: Yup.object({
       email: Yup
         .string()
-        .email('Must be a valid email')
+        .email('Precisa ser um email válido')
         .max(255)
-        .required('Email is required'),
+        .required('Email é obrigatório'),
       name: Yup
         .string()
         .max(255)
-        .required('Name is required'),
+        .required('Nome é obrigatório'),
       password: Yup
         .string()
         .max(255)
-        .required('Password is required')
+        .required('Senha é obrigatório')
     }),
     onSubmit: async (values, helpers) => {
       try {
@@ -48,7 +48,7 @@ const Page = () => {
     <>
       <Head>
         <title>
-          Register | Devias Kit
+          Registre-se | TechStock
         </title>
       </Head>
       <Box
@@ -73,13 +73,13 @@ const Page = () => {
               sx={{ mb: 3 }}
             >
               <Typography variant="h4">
-                Register
+                Registre-se
               </Typography>
               <Typography
                 color="text.secondary"
                 variant="body2"
               >
-                Already have an account?
+               Já tem uma conta? {' '}
                 &nbsp;
                 <Link
                   component={NextLink}
@@ -87,7 +87,7 @@ const Page = () => {
                   underline="hover"
                   variant="subtitle2"
                 >
-                  Log in
+                  Logar-se
                 </Link>
               </Typography>
             </Stack>
@@ -145,7 +145,7 @@ const Page = () => {
                 type="submit"
                 variant="contained"
               >
-                Continue
+                Continuar
               </Button>
             </form>
           </div>
